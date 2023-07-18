@@ -1,0 +1,79 @@
+.hide {
+  display: none;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px 20px;
+  min-width: 209px;
+  min-height: 48px;
+  background-color: var(--yeallow-brand-color);
+  color: var(--white-secondery-color, #fff);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+.button:hover,
+.button:focus {
+  background-color: var(--yeallow-brand-hover);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.button:active {
+  transform: scale(0.95);
+}
+
+.label {
+  color: var(--yeallow-brand-color, #fc0);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title {
+  color: var(--black-font-color, #231900);
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+}
+@media (max-width: 1230px) {
+  .title {
+    font-size: calc(36px + (55 - 36) * ((100vw - 320px) / (1230 - 320)));
+  }
+  .label {
+    font-size: calc(16px + (18 - 16) * ((100vw - 320px) / (1230 - 320)));
+  }
+}
+
+._ibg {
+  position: relative;
+  overflow: hidden;
+}
+._ibg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+[data-animated] {
+  transform: translate(2rem, 2rem);
+  opacity: 0;
+  /* для начала появления анимации с задержкой 0,3 секунды  */
+  transition: opacity 0.7s ease-in-out 0.3s, transform 0.7s ease-in-out 0.3s;
+}
+
+[data-animated].active {
+  transform: translate(0, 0);
+  opacity: 1;
+}
