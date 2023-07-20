@@ -401,6 +401,7 @@ body {
   }
   .header__button {
     min-width: 0;
+    min-height: 36px;
   }
 }
 @media (max-width: 767.98px) {
@@ -411,8 +412,8 @@ body {
     position: relative;
     z-index: 5;
     display: block;
-    width: 50px;
-    height: 40px;
+    width: 30px;
+    height: 28px;
     cursor: pointer;
   }
   .icon-menu span,
@@ -420,7 +421,7 @@ body {
   .icon-menu::after {
     right: 0;
     position: absolute;
-    height: 15%;
+    height: 4px;
     width: 100%;
     border-radius: 10px;
     background-color: var(--white-semi-white);
@@ -440,7 +441,7 @@ body {
   }
   .icon-menu span {
     width: 85%;
-    top: 50%;
+    top: 49%;
     -webkit-transform: translate(0, -50%);
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
@@ -452,19 +453,17 @@ body {
   }
   .icon-menu._active::before {
     content: "";
-    width: 56px;
-    height: 6px;
-    -webkit-transform: rotate(45deg) translate(10px, 14px);
-    -ms-transform: rotate(45deg) translate(10px, 14px);
-    transform: rotate(45deg) translate(10px, 14px);
+    width: 39px;
+    -webkit-transform: rotate(45deg) translate(11px, 6px);
+    -ms-transform: rotate(45deg) translate(11px, 6px);
+    transform: rotate(45deg) translate(11px, 6px);
   }
   .icon-menu._active::after {
     content: "";
-    width: 56px;
-    height: 6px;
-    -webkit-transform: rotate(-45deg) translate(10px, -14px);
-    -ms-transform: rotate(-45deg) translate(10px, -14px);
-    transform: rotate(-45deg) translate(10px, -14px);
+    width: 39px;
+    -webkit-transform: rotate(-45deg) translate(11px, -6px);
+    -ms-transform: rotate(-45deg) translate(11px, -6px);
+    transform: rotate(-45deg) translate(11px, -6px);
   }
   .menu__body {
     position: fixed;
@@ -525,9 +524,9 @@ body {
   }
   .header__container,
   .menu__list {
-    -webkit-column-gap: 14px;
-    -moz-column-gap: 14px;
-    column-gap: 14px;
+    -webkit-column-gap: 35px;
+    -moz-column-gap: 35px;
+    column-gap: 35px;
   }
   .menu__list {
     -webkit-box-orient: vertical;
