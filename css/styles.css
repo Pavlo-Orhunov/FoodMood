@@ -881,6 +881,11 @@ body {
     color: var(--yeallow-brand-color);
   }
 }
+@media (any-hover: none) {
+  .item-category__title {
+    border-bottom: 2px dashed var(--black-font-color, #231900);
+  }
+}
 .item-category__text {
   font-size: 20px;
   font-weight: 600;
@@ -1272,6 +1277,7 @@ body {
   }
 }
 .item-team__name {
+  align-self: flex-start;
   margin-bottom: 13px;
   font-size: 24px;
   font-weight: 600;
@@ -1282,6 +1288,11 @@ body {
 @media (any-hover: hover) {
   .item-team__name:hover {
     color: var(--yeallow-brand-color);
+  }
+}
+@media (any-hover: none) {
+  .item-team__name {
+    border-bottom: 2px dashed var(--black-font-color, #231900);
   }
 }
 .item-team__position {
