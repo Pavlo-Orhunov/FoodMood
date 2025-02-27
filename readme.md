@@ -1,4 +1,4 @@
-# This landing page is designed on a basis of a template kindly provided by Evhen Andrikanych. <br>
+# This landing page is designed on a basis of a template kindly provided by Yevhen Andrikanych. <br>
 
 ## Spent about 2 weeks, but working on the project about 1 week (2023/07/06 - 2023/07/18). Beginners level. <br>
 
